@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block content %}
+{% set page_title = "Bienvenido, Usuario" %}
+<div class="welcome-section">
+    <h1>Bienvenido, usuario</h1>
+    <p class="welcome-text">Te damos la bienvenida a la plataforma de análisis de datos académicos de la Escuela Colombiana de Ingeniería Julio Garavito. Nuestra herramienta en línea te brinda la posibilidad de cargar archivos en formato Excel o CSV, permitiéndote explorar y visualizar datos académicos de manera eficaz. Mediante gráficos y estadísticas detalladas, podrás examinar patrones y tendencias en el rendimiento académico. Ya sea para identificar áreas de mejora, entender el desempeño de los estudiantes o tomar decisiones informadas, nuestra plataforma está diseñada para ayudarte en la toma de decisiones basadas en datos. Comienza a explorar tus datos de manera efectiva y toma el control de la información académica.</p>
+</div>
+
+<div class="tutorial-section">
+    <h2>Menú</h2>
+    <div class="tutorial-box">
+        <a href="{{ url_for('home') }}">
+            <img src="{{ url_for('static', filename='home_image.png') }}" alt="Home">
+            <p>Inicio</p>
+        </a>
+    </div>
+    <div class="tutorial-box">
+        <a href="{{ url_for('show_graphs') }}">
+            <img src="{{ url_for('static', filename='graphs_image.png') }}" alt="Graphs">
+            <p>Gráficos</p>
+        </a>
+    </div>
+    <div class="tutorial-box">
+        <a href="{{ url_for('upload_files') }}">
+            <img src="{{ url_for('static', filename='upload_image.png') }}" alt="Upload">
+            <p>Cargar Archivos</p>
+        </a>
+    </div>
+</div>
+
+{% endblock %}

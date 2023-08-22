@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2 style="margin-top: 50px;">Upload File Information</h2>
+<form method="POST" enctype="multipart/form-data" action="{{ url_for('upload_files') }}">
+    <input type="file" name="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, text/csv">
+    <input type="text" name="name" placeholder="Name">
+    <input type="text" name="description" placeholder="Description">
+    <input type="submit" value="Upload and Save Info">
+</form>
+
+<h2 style="margin-top: 50px;">Available Information</h2>
+<ul>
+    {% for file in all_files %}
+    <li>
+        {{ file.name }}
+        <a href="{{ file.download_url }}" class="btn btn-primary" download><i class="fas fa-download"></i> Download</a>
+        <button class="btn delete-button"><i class="fas fa-trash-alt"></i> Delete</button>
+    </li>
+    {% endfor %}
+</ul>
+    
+{% endblock %}
+
+
+

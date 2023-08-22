@@ -1,0 +1,71 @@
+body {
+    background-color: #f5f5dc; /* Código hexadecimal para el color beige */
+}
+
+.btn {
+    display: inline-block;
+    padding: 4px 7px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #FFB0B0; /* Color rojo pálido */
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.btn:hover {
+    background-color: #FF7777;
+    margin-right: 10px;
+}
+
+.welcome-text {
+    padding-right: 100px; /* Ajusta el valor según el espacio que quieras agregar */
+}
+.tutorial-section {
+    text-align: center; /* Centrar el contenido horizontalmente */
+}
+.tutorial-section ol li a {
+    color: #007bff;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+.tutorial-box {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+ul li {
+    margin-right: 20px; /* Agregar espacio debajo de cada elemento de la lista */
+}
+
+.tutorial-box a {
+    text-decoration: none;
+    color: #333;
+}
+
+.tutorial-box img {
+    width: 170px;
+    height: 100px;
+}
+.tutorial-box {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    margin: 10px auto; /* Margen vertical automáticamente y centrado horizontalmente */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+/* Agregar espacio antes de la sección "Available Information" */
+h2:first-child {
+    margin-top: 50px; /* Ajusta el valor según el espacio deseado */
+}
